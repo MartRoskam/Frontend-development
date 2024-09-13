@@ -19,10 +19,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Mart Roskam
 
   #### Je startniveau:
-  Blauw en misschien rood als het makkelijk is
+  Blauw en misschien rood als blauw te makkelijk is
 
   #### Je focus:
-  Surface laag
+  Surface plane
  
 </details>
 
@@ -36,15 +36,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Je opdracht:
-  Nintendo https://www.nintendo.com/nl-nl/Games/Games-347085.html en https://www.nintendo.com/nl-nl/Hardware/Nintendo-Switch-familie/Nintendo-Switch-familie-1618251.html 
+  https://store.nintendo.nl/nl/games/shop-by-franchise/mario-kart-games?sort=top-sellers en https://store.nintendo.nl/nl/mario-kart-8-deluxe-70010000000126
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  Games overzicht pagina van de Nederlandse Nßintendo site 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  Mario Kart games overzicht op de nintendo store
+  <img src="readme-images/overzicht.png" width="375px" alt="Screenshot van de overzichtpagina voor mario kart games op de nintendo store">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  Nintendo switch overzicht pagina van de Nederlandse Nintendo site 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  Mario Kart 8 Deluxe op de nintendo store
+  <img src="readme-images/martiokart8.png" width="375px" alt="Screenshot van de pagina over Mario Kart 8 Deluxe op de nintendo store">
  
 </details>
 
@@ -56,7 +56,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na test in 2<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen:
+  -Stem van de voiceover is overweldigend
+  -Ik heb geen idee waar op de site ik ben als de voiceover iets zegt
+  -Heel lastig om te gebruiken
+  -Sommige images hebben geen of een onduidelijke alt tag en dat is vervelend
+  -Heel erg wennen
+  -Wanneer je er eenmaal aan gewend bent kan het handig zijn voor slechtzienden
+
 
 </details>
 
@@ -67,14 +73,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 <details>
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
-  ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  ### Eerste pagina (overzicht mario kart games): 
+  <img src="readme-images/breakdownschetsscherm1.png" width="375px" alt="breakdown van de hele eerste pagina">
 
-  ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
-
-  ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+  ### Tweede pagina (Mario Kart 8 Deluxe kooppagina): 
+  <img src="readme-images/breakdownschetsscherm2.png" width="375px" alt="breakdown van de hele tweede pagina">
 
 </details>
 
@@ -88,17 +91,20 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Ik loop een beetje achter en vind het ook best een lastige en overweldigende opdracht, maar ik hoop dit weekend bij te komen en dat ik daarna 
+  verder kan werken.
 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | Mart Roskam                     
+  | 
+  | Vragen die ik wil stellen:            
+  | 1. Wanneer gebruik je een div / section / article?      
+  | 2. Waarom is de javascript gelinkt in de body?
+  | 3. Mag je buttons gebruiken in je html?
+  | 4. Hoe specifiek moet je zijn met alt-tags?
 
 
   ### Verslag van meeting
