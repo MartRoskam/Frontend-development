@@ -110,11 +110,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Antwoord vraag 1: Div is alleen layout wise voor css. Gebruik sections als je niet zeker weet of het een article is.
+  - Antwoord vraag 2: Dat hoort zo, want dan wordt eerst je html en css geladen en daarna pas je javascript. Dit helpt goed voor asl je javascript vastloopt 
+  - Antwoord vraag 3: Gebruik a links wanneer de link van de website veranderd en gebruik buttons voor interacties op dezelfde pagina
+  - Antwoord vraag 4: Zo als ik het nu doe is wel prima
 
+  Ik kreeg feedback van studentassistenten over mijn HTML pagina en ik heb goed antwoord op mijn vragen gekregen. 
+  Details tag gebruiken in de footer
 </details>
 
 
@@ -127,18 +129,19 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Ik loop nogsteeds achter
 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
+  | Mart Roskam     
+  | ---             
+  | Vragen die ik wil stellen:   
+  | 1. Ik krijg allemaal info's over dat mijn sections geen headings hebben, moet ik ze dan naar divs veranderen zoals de validator zegt?
+  | 2. Wat is slim om te doen als ik meerdere html pagina's in dezelfde css pagina moet stylen?
+  | 3. Hoe kopieer en plak ik makkelijk mijn cards met dezelfde styling?
+  | 4. 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
