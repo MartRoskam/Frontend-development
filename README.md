@@ -44,7 +44,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de tweede pagina (small screen):
   Mario Kart 8 Deluxe op de nintendo store
-  <img src="readme-images/martiokart8.png" width="375px" alt="Screenshot van de pagina over Mario Kart 8 Deluxe op de nintendo store">
+  <img src="readme-images/mariokart8.png" width="375px" alt="Screenshot van de pagina over Mario Kart 8 Deluxe op de nintendo store">
  
 </details>
 
@@ -56,12 +56,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na test in 2<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
-  -Stem van de voiceover is overweldigend
-  -Ik heb geen idee waar op de site ik ben als de voiceover iets zegt
-  -Heel lastig om te gebruiken
-  -Sommige images hebben geen of een onduidelijke alt tag en dat is vervelend
-  -Heel erg wennen
-  -Wanneer je er eenmaal aan gewend bent kan het handig zijn voor slechtzienden
+  Na het volgen van de WCAG Checklist kwamen ik deze dingen tegen die beter kunnen:
+  1. Bij buttons is het niet altijd duidelijk wat ze doen voordat je er op klikt
+  2. Verschrikkelijk sleche focus style (behalve in de footer)
+  3. Headings zjn niet echt op een logische volgorde (eerst h3 dan h2?)
+  4. Meeste alt tags of aria labels zijn goed, maar een aantal kunnen toch wat gebruiksvriendelijker
+  5. Subtitles zijn niet available maar zijn ook niet persee nodig bij deze video
+  6. Wanneer ik de video pauzeer verdwijnt die en moet ik opnieuw beginnen?
+  7. Site heeft geen darkmode (alleen lightmode)
 
 
 </details>
@@ -91,8 +93,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  Ik loop een beetje achter en vind het ook best een lastige en overweldigende opdracht, maar ik hoop dit weekend bij te komen en dat ik daarna 
-  verder kan werken.
+  Ik loop een beetje achter en vind het ook best een lastige en overweldigende opdracht, maar ik hoop dit weekend bij te komen en dat ik daarna verder kan werken.
 
 
   ### Agenda voor meeting
@@ -129,7 +130,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  Ik loop nogsteeds achter
+  Ik loop nogsteeds achter maar ik begin wel in de flow te komen
 
 
   ### Agenda voor meeting
@@ -140,16 +141,22 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   | Vragen die ik wil stellen:   
   | 1. Ik krijg allemaal info's over dat mijn sections geen headings hebben, moet ik ze dan naar divs veranderen zoals de validator zegt?
   | 2. Wat is slim om te doen als ik meerdere html pagina's in dezelfde css pagina moet stylen?
-  | 3. Hoe kopieer en plak ik makkelijk mijn cards met dezelfde styling?
-  | 4. 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
+  - Antwoorden op mijn vragen:
+  - 1. Sections moeten eigenlijk wel altijd headings hebben dus gebruik ipv sections dan divs
+  - 2. Maak gebruik van classes of zorg ervoor dat de pagina's er ongeveer hetzelfde uitzien (ook goed voor toegankelijkheid)
+
+  Feedback van ivo over mijn code en readme:
+  - Doe de toegankelijksheidtest opnieuw (Done)
+  - Zet je bronnen in je readme (Done)
+  - Maak je alt tags toegankelijker (Done)
+  - Verminder je aantal sections 
+  - Fix de hierarchie in je headings (Done)
+  - Maak van de images in je nav een a href (Done)
+
 
 </details>
 
@@ -177,17 +184,18 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Ik loop nogsteeds achter, maar de eerste pagina is bijna af. Dus het gaat al wel wat beter.
 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | Mart Roskam    
+  | ---            
+  | Vragen die ik wil stellen:  
+  | 1. Waarom werken de buttons in mijn cards niet normaal?
+  | 2. Waarom staan de social media links en icons zo raar?    
+  | 3. Hoe zorg ik er voor dat de links in mijn footer op deze manier komen te staan met flexbox?  
 
 
   ### Verslag van meeting
@@ -238,8 +246,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
+Bronnen voor code:
+  1. [bron 1](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
   2. bron 2
   3. ...
+
+Bronnen voor images:
+  1. https://store.nintendo.nl/nl/games/shop-by-franchise/mario-kart-games?sort=top-sellers 
+  2. https://www.nintendo.com/en-gb/My-Nintendo-Store/Legal/Terms-of-Delivery-1361209.html 
+  3.
 
 </details>

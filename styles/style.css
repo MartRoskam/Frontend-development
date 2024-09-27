@@ -39,7 +39,7 @@
 /*----------------------------------------------------*/
 
 
-body {
+html, body {
 	margin-left: 0;
 	margin-right: 0;
 }
@@ -57,14 +57,14 @@ header section p:first-child {
 	margin-top: -0.5em;
 }
 
-header section section {
+header section div {
 	display: flex;
 	justify-content: space-evenly;
 	margin-bottom: 0.5em;
 }
 
 /* eerste button */
-header section section button:first-of-type {
+header section div button:first-of-type {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -75,23 +75,23 @@ header section section button:first-of-type {
 	background-color: var(--white);
 }
 
-header section section button:first-of-type img:first-of-type {
+header section div button:first-of-type img:first-of-type {
 	height: 2em;
 	width: 2em;
 	margin-right: 2em;
 }
 
-header section section button:first-of-type img:last-of-type {
+header section div button:first-of-type img:last-of-type {
 	height: 2em;
 	width: 2em;
 }
 
-header section section button:first-of-type span {
+header section div button:first-of-type span {
 	margin-right: 2em;
 }
 
 /* tweede button */
-header section section button:last-of-type {
+header section div button:last-of-type {
 	text-align: center;
 	font-weight: bold;
 	font-size: 0.9em;
@@ -115,44 +115,49 @@ header nav {
 	align-items: center;
 }
 
-header nav img {
+header button {
+	border-style: none;
+	background-color: var(--red);
+}
+
+header nav a img {
 	height: 2.25em;
 	width: 9em;
 }
 
-header .navbaricons {
+header button img {
 	height: 2.25em;
 	width: 2.25em;
 }
 
-header nav img:first-child {
-    margin-right: 1em; 
-	margin-left: 2.5em;
-}
+header nav button:first-of-type {
+	margin-left: 2em;
+	margin-right: 1em;
+} 
 
-header nav img:nth-child(2) {
-    margin-right: 1em; 
-}
+header nav button:nth-of-type(2) {
+	margin-right: 1em;
+} 
 
-header nav img:nth-child(3) {
-    margin-right: 1em; 
-}
-
-header nav img:last-child {
-	margin-right: 2em;
+header nav button:nth-of-type(3) {
 	margin-left: auto;
+	margin-right: 1.5em;
+} 
+
+header nav a {
+	margin-right: 1em;
 }
 
 /*------*/
 /* MAIN */
 /*------*/
 
-/* Winkelen op franchise link */
 main {
 	background-color: var(--lightgray);
 }
 
-main section section:first-of-type {
+/* Winkelen op franchise link */
+main > section > div:first-of-type {
 	display: flex;
 	align-items: center;
 	padding-top: 1em;
@@ -160,19 +165,19 @@ main section section:first-of-type {
 	font-size: 0.8em;
 }
 
-main section section:first-of-type img {
+main > section > div:first-of-type img {
 	height: 1.5em;
 	width: 1.5em;
 }
 
-main section section:first-of-type a {
+main > section > div:first-of-type a {
 	list-style: none;
 	text-decoration: none;
 	color: var(--color-text);
 }
 
 /* Introductie mario kart games */
-main section section:nth-of-type(2) {
+main section div:nth-of-type(2) {
 	display: flex;
 	flex-direction: column;
 	margin: 1.25em;
@@ -183,29 +188,29 @@ main section section:nth-of-type(2) {
 	background-color: var(--white);
 }
 
-main section section:nth-of-type(2) h1 {
+main section div:nth-of-type(2) h1 {
 	margin: 0.5em 0em 0.05em 0.7em;
 	font-size: 1.7em;
 }
 
-main section section:nth-of-type(2) p {
+main section div:nth-of-type(2) p {
 	margin: 0.35em 1.4em 1em 1.4em;
 	font-size: 0.82em;
 }
 
-main section section:nth-of-type(2) img {
+main section div:nth-of-type(2) img {
 	margin-top: 1em;
 	margin-bottom: 0.35em;
 	width: 100%;
 }
 
 /* Best verkocht en Filter buttons */
-main section section:nth-of-type(3) {
+main section div:nth-of-type(3) {
 	display: flex;
 	margin-top: 2.5em;
 }
 
-main section section:nth-of-type(3) button {
+main section div:nth-of-type(3) button {
 	display: flex;
 	align-items: center;
 	border-style: solid;
@@ -215,42 +220,48 @@ main section section:nth-of-type(3) button {
 	width: 100%;
 }
 
-main section section:nth-of-type(3) button span {
+main section div:nth-of-type(3) button span {
 	margin: 0.5em 1em;
 	font-size: 1.1em;
 	font-weight: bold;
 }
 
-main section section:nth-of-type(3) button img {
+main section div:nth-of-type(3) button img {
 	margin-left: auto;
 	margin-right: 0.5em;
 }
 
-main section section:nth-of-type(3) button:last-of-type {
+main section div:nth-of-type(3) button:last-of-type {
 	border-width: 0.1em 0em 0.1em 0.1em;
 }
 
-main section section:nth-of-type(3) img {
+main section div:nth-of-type(3) img {
 	height: 2em;
 	width: 2em;
 }
 
 /* Aantal resultaten */
-main section section:nth-of-type(4) {
-	display: flex;
+main section div:last-of-type p  {
 	align-items: center;
 	margin-top: 1em;
+	margin-bottom: 4em;
 	margin-left: 1.7em;
 	font-size: 0.8em;
 	font-weight: bold;
 }
 
+/* Game cards positionering */
+main section:last-of-type {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Maakt gelijke ruimte tussen de items */
+}
+
 /* Game cards */
-main section section:nth-of-type(5) {
-	display: flex;
+.card {
+    margin: 0.5em; 
 	flex-direction: column;
-	margin: 1.25em;
-	width: 45%;
+	width: 45vw;
 	border-style: solid;
 	border-radius: 1.25em;
 	border-width: 0.1em;
@@ -258,11 +269,15 @@ main section section:nth-of-type(5) {
 	background-color: var(--white);
 }
 
-main section section:nth-of-type(5) img {
-	width: 100%;
+.card img {
+	border-top: none;
+	border-top-left-radius: 1.25em;
+	border-top-right-radius: 1.25em;
+	border-width: 0.1em;
+	max-width: 100%;
 }
 
-main section section:nth-of-type(5) p {
+.card p {
 	color: var(--color-text2);
 	margin: 1em 0.5em;
 	font-size: 0.6em;
@@ -271,15 +286,22 @@ main section section:nth-of-type(5) p {
 	text-transform: uppercase;
 }
 
-main section section:nth-of-type(5) h3 {
+.card h2:first-of-type {
 	margin: 0.5em 0.25em;
+	font-size: 1em;
 }
 
-main section section:nth-of-type(5) a {
+.card h2:last-of-type {
+	margin: 3em 0.25em 0.5em 0.25em;
+	font-size: 1em;
+}
+
+.card a {
 	color: var(--color-text);
 	text-decoration: none;
+	width: 80%;
 	margin: 1em 0.5em;
-	padding: 0.5em 1em;
+	padding: 1em 2em;
 	border-style: solid;
 	border-radius: 5em;
 	border-color: var(--lightgrayborder);
@@ -290,9 +312,17 @@ main section section:nth-of-type(5) a {
 	text-align: center;
 }
 
-main section section:nth-of-type(5) button {
-	height: 2.5em;
-	width: 2.5em;
+.card div {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.card button {
+	height: 3em;
+	width: 3em;
+	margin-right: 0.5em;
+	margin-bottom: 0.5em;
 	background-color: var(--white);
 	border-style: solid;
 	border-radius: 5em;
@@ -300,7 +330,149 @@ main section section:nth-of-type(5) button {
 	border-width: 0.1em;
 }
 
-main section section:nth-of-type(5) button img{
-	height: 1.25em;
-	width: 1.25em;
+.card button img {
+	height: 1.75em;
+	width: 1.75em;
+}
+
+/*--------*/
+/* FOOTER */
+/*--------*/
+
+/* Land button bovenaan de footer */
+footer div:first-of-type {
+	border-bottom-style: solid;
+	border-color: var(--lightgrayborder);
+	border-width: 0.1em;
+}
+
+footer div:first-of-type button {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-weight: bold;
+	border-style: solid;
+	border-radius: 0.7em;
+	border-color: var(--lightgrayborder);
+	padding-top: 0.4em;
+	padding-bottom: 0.4em;
+	background-color: var(--white);
+	margin-top: 0.5em;
+	margin-bottom: 2.5em;
+	margin-left: 7.5em;
+}
+
+footer div:first-of-type button img:first-of-type {
+	height: 2em;
+	width: 2em;
+	margin-right: 2em;
+}
+
+footer div:first-of-type button img:last-of-type {
+	height: 2em;
+	width: 2em;
+}
+
+footer div:first-of-type button span {
+	margin-right: 2em;
+}
+
+/* Uitklapbare navigatie */
+footer details summary {
+	display: flex;
+	align-items: center;
+	list-style-type: none;
+	margin-top: 1.2em;
+	margin-left: 1.5em;
+}
+
+footer details summary span {
+	margin-right: 1em;
+	font-size: 1.15em;
+	font-weight: bolder;
+}
+
+footer details summary img {
+	height: 2em;
+	width: 2em;
+	margin-left: auto;
+	margin-right: 1em;
+}
+
+footer details ul li {
+	list-style-type: none;
+	margin-left: -1em;
+	margin-right: 2em;
+	padding-top: 0.7em;
+	padding-bottom: 0.7em;
+}
+
+footer details ul li a {
+	text-decoration: none;
+	font-size: 1em;
+	color: var(--color-text)
+}
+
+footer details:last-of-type {
+	border-bottom-style: solid;
+	border-color: var(--lightgrayborder);
+	border-width: 0.1em;
+	padding-bottom: 2em;
+}
+
+/* Social media links en images */
+footer nav:first-of-type ul {
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-top: 1.5em;
+	margin-left: 0.7em;
+	margin-right: 0.7em;
+}
+
+footer nav:first-of-type ul li {
+	list-style-type: none;
+}
+
+footer nav:first-of-type ul li img {
+	height: 1.8em;
+	width: 1.8em;
+}
+
+/* Betaal veilig met */
+footer div:last-of-type {
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-left: 1.5em;
+	margin-right: 1.5em;
+	padding: 0.2em;
+}
+
+footer div:last-of-type p {
+	font-weight: bold;
+	font-size: 0.9em;
+	margin-right: 0.3em;
+}
+
+footer div:last-of-type img {
+	height: 2em;
+}
+
+/* Navigatie helemaal onderaan de pagina */
+footer nav:last-of-type ul {
+	display: flex;
+	flex-direction: column;
+}
+
+footer nav:last-of-type ul li {
+	list-style-type: none;
+}
+
+footer nav:last-of-type ul li a, footer nav:last-of-type ul li p {
+	text-decoration: none;
+	font-size: 0.8em;
+	color: var(--color-text2);
 }
