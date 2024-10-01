@@ -1,56 +1,99 @@
 <!DOCTYPE html>
 <html lang="nl">
-	
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="author" content="Mart Roskam">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
+
 	<title>Mario Kart overzichtpagina</title>
-	
+
 	<link href="styles/style.css" rel="stylesheet">
-	<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+	<link rel="icon" type="image/svg+xml" href="images/favicon.png">
+	<!-- Bron: https://store.nintendo.nl/nl/games/shop-by-franchise/mario-kart-games?sort=top-sellers-->
 </head>
 
 <body>
 	<header>
-		<section>
+		<section id="verdwijnHeader">
 			<p>Kies of bevestig je verzendlocatie en voorkeurstaal</p>
 			<div>
-				<button> 
-					<img src="images/nl.svg" alt="Nederlandse vlag"> <!-- Bron: https://store.nintendo.nl/nl/games/shop-by-franchise/mario-kart-games?sort=top-sellers-->
-					<span>Nederland €</span>
-					<img src="images/arrowdown.png" alt="Dropdown menu"> <!-- Bron: https://store.nintendo.nl/nl/games/shop-by-franchise/mario-kart-games?sort=top-sellers-->
-				</button>
-				<button>Doorgaan</button>
+				<div class="dropdown-container">
+					<button id="toggleButton" aria-label="Land selecteren">
+						<img src="images/nl.svg" alt="Nederlandse vlag">
+						<!-- Bron: https://store.nintendo.nl/nl/games/shop-by-franchise/mario-kart-games?sort=top-sellers-->
+						<span>Nederland €</span>
+						<img src="images/arrowdown.png" alt="Dropdown menu" class="arrowIcon">
+						<!-- Bron: https://store.nintendo.nl/nl/games/shop-by-franchise/mario-kart-games?sort=top-sellers-->
+					</button>
+					<p id="dropdownContent" class="hidden">Meer opties...</p>
+				</div>
+				<div>
+					<button id="doorgaanKnop">Doorgaan</button>
+				</div>
 			</div>
 		</section>
 		<nav>
-			<button><img src="images/hamburgericon.png" alt="Menu"></button> <!-- Bron: https://store.nintendo.nl/nl/games/shop-by-franchise/mario-kart-games?sort=top-sellers-->
-			<button><img src="images/searchicon.png" alt="Zoeken"></button> <!-- Bron: https://store.nintendo.nl/nl/games/shop-by-franchise/mario-kart-games?sort=top-sellers-->
-			<a href="nintendohome.html"><img src="images/mynintendostorelogo.png" alt="Logo van my nintendo store"></a> <!-- Bron: https://www.nintendo.com/en-gb/My-Nintendo-Store/Legal/Terms-of-Delivery-1361209.html-->
-			<button><img src="images/profileicon.png" alt="Naar profiel"></button> <!-- Bron: https://store.nintendo.nl/nl/games/shop-by-franchise/mario-kart-games?sort=top-sellers-->
+			<button><img src="images/hamburgericon.png" alt="Menu" id="hamburgerButton"></button>
+			<!-- Bron: https://store.nintendo.nl/nl/games/shop-by-franchise/mario-kart-games?sort=top-sellers-->
+			<button><img src="images/searchicon.png" alt="Zoeken"></button>
+			<!-- Bron: https://store.nintendo.nl/nl/games/shop-by-franchise/mario-kart-games?sort=top-sellers-->
+			<a href="nintendohome.html"><img src="images/mynintendostorelogo.png" alt="Home"></a>
+			<!-- Bron: https://www.nintendo.com/en-gb/My-Nintendo-Store/Legal/Terms-of-Delivery-1361209.html-->
+			<button><img src="images/profileicon.png" alt="Naar profiel"></button>
+			<!-- Bron: https://store.nintendo.nl/nl/games/shop-by-franchise/mario-kart-games?sort=top-sellers-->
 		</nav>
+		<div id="popupMenu" class="popup hidden">
+			<div class="popup-content">
+				<div>
+					<h2>Menu</h2>
+					<span id="closePopup" class="close">&times;</span>
+				</div>
+				<div>
+					<ul>
+						<li><a href="nieuw.html"><span>Nieuw</span> <img src="images/arrowright.png" alt="Open submenu"></a></li>
+						<li><a href="spelsystemen.html"><span>Spelsystemen</span> <img src="images/arrowright.png" alt="Open submenu"></a></li>
+						<li><a href="games.html"><span>Games</span> <img src="images/arrowright.png" alt="Open submenu"></a></li>
+						<li><a href="merchandise.html"><span>Merchandise</span> <img src="images/arrowright.png" alt="Open submenu"></a></li>
+						<li><a href="franchises.html"><span>Franchises</span> <img src="images/arrowright.png" alt="Open submenu"></a></li>
+						<!-- Bron: https://store.nintendo.nl/nl/games/shop-by-franchise/mario-kart-games?sort=top-sellers-->
+					</ul>
+				</div>
+				<div>
+					<ul>
+						<li><a href="account.html">Mijn account</a></li>
+						<li><a href="verlanglijst.html">Verlanglijst</a></li>
+						<li><a href="mijnbestellingen.html">Mijn bestellingen</a></li>
+						<li><a href="hulpenveelgesteldevragen.html">Hulp en veelgestelde vragen</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
 	</header>
-	<main>
+	<main id="indexmain">
 		<section>
 			<div>
-				<img src="images/arrowleft.png" alt="Naar winkelen op franchise"> <!-- Bron: https://store.nintendo.nl/nl/games/shop-by-franchise/mario-kart-games?sort=top-sellers-->
-				<a href="franchise.html" >Winkelen op franchise</a>
+				<img src="images/arrowleft.png" alt="Terug naar winkelen op franchise">
+				<!-- Bron: https://store.nintendo.nl/nl/games/shop-by-franchise/mario-kart-games?sort=top-sellers-->
+				<a href="franchise.html" aria-label="Terug naar franchises">Winkelen op franchise</a>
 			</div>
 			<div>
 				<h1>Mario Kart games</h1>
-				<p>Ga overal en wanneer je maar wilt racen of verander je huis in een Mario Kart-circuit! Bekijk de volledige catalogus van Mario Kart games die verkrijgbaar zijn in My Nintendo Store.</p>
-				<img src="images/mariokartgrijs.avif" alt="Logo van de Mario Kart game"> <!-- Bron: https://store.nintendo.nl/nl/games/shop-by-franchise/mario-kart-games?sort=top-sellers-->
+				<p>Ga overal en wanneer je maar wilt racen of verander je huis in een Mario Kart-circuit! Bekijk de
+					volledige catalogus van Mario Kart games die verkrijgbaar zijn in My Nintendo Store.</p>
+				<img src="images/mariokartgrijs.avif" alt="Logo van de Mario Kart game">
+				<!-- Bron: https://store.nintendo.nl/nl/games/shop-by-franchise/mario-kart-games?sort=top-sellers-->
 			</div>
 			<div>
-				<button>
+				<button aria-label="Sorteren op">
 					<span>Best verkocht</span>
-					<img src="images/arrowdown.png" alt="Dropdown menu"> <!-- Bron: https://store.nintendo.nl/nl/games/shop-by-franchise/mario-kart-games?sort=top-sellers-->
+					<img src="images/arrowdown.png" alt="Dropdown menu">
+					<!-- Bron: https://store.nintendo.nl/nl/games/shop-by-franchise/mario-kart-games?sort=top-sellers-->
 				</button>
-				<button>
+				<button aria-label="Filteren op">
 					<span>Filter (0)</span>
-					<img src="images/filtericon.png" alt="Filteren"> <!-- Bron: https://store.nintendo.nl/nl/games/shop-by-franchise/mario-kart-games?sort=top-sellers-->
+					<img src="images/filtericon.png" alt="Filteren">
+					<!-- Bron: https://store.nintendo.nl/nl/games/shop-by-franchise/mario-kart-games?sort=top-sellers-->
 				</button>
 			</div>
 			<div>
@@ -59,73 +102,95 @@
 		</section>
 		<section>
 			<section class="card">
-				<img src="images/circuituitbreidingpas.png" alt="Cover van de uitbreidingpas voor Mario Kart 8"> <!-- Bron: https://store.nintendo.nl/nl/games/shop-by-franchise/mario-kart-games?sort=top-sellers-->
+				<img src="images/circuituitbreidingpas.png" alt="Cover van de uitbreidingpas voor Mario Kart 8">
+				<!-- Bron: https://store.nintendo.nl/nl/games/shop-by-franchise/mario-kart-games?sort=top-sellers-->
 				<p>Nintendo Switch</p>
 				<h2>Mario Kart 8 Deluxe – Circuit uitbreidingspas</h2>
-				<h2>€24,99 (incl. btw)</h2>
 				<div>
-					<a href="mariokartdeluxe8uitbreidingpas.html">Product bekijken</a>
-					<button>
-						<img src="images/hearticon.png" alt="Toevoegen aan favorieten">
-					</button>
+					<h2>€24,99 (incl. btw)</h2>
+					<div>
+						<a href="mariokartdeluxe8uitbreidingpas.html" aria-label="Mario kart 8 Deluxe uitbreidingspas product bekijken">Product bekijken</a>
+						<button>
+							<img src="images/hearticon.png" alt="Mario kart 8 Deluxe uitbreidingspas toevoegen aan favorieten">
+							<!-- Bron: https://store.nintendo.nl/nl/games/shop-by-franchise/mario-kart-games?sort=top-sellers-->
+						</button>
+					</div>
 				</div>
 			</section>
 			<section class="card">
-				<img src="images/mariokart8deluxe.png" alt="Cover van Mario Kart 8 Deluxe"> <!-- Bron: https://store.nintendo.nl/nl/games/shop-by-franchise/mario-kart-games?sort=top-sellers-->
+				<img src="images/mariokart8deluxe.png" alt="Cover van Mario Kart 8 Deluxe">
+				<!-- Bron: https://store.nintendo.nl/nl/games/shop-by-franchise/mario-kart-games?sort=top-sellers-->
 				<p>Nintendo Switch</p>
 				<h2>Mario Kart 8™ Deluxe</h2>
-				<h2>€59,99 (incl. btw)</h2>
 				<div>
-					<a href="mariokartdeluxe8.html">Product bekijken</a>
-					<button>
-						<img src="images/hearticon.png" alt="Toevoegen aan favorieten">
-					</button>
+					<h2>€59,99 (incl. btw)</h2>
+					<div>
+						<a href="mariokart8deluxe.html" aria-label="Mario kart 8 Deluxe product bekijken">Product bekijken</a>
+						<button>
+							<img src="images/hearticon.png" alt="Mario kart 8 Deluxe toevoegen aan favorieten">
+							<!-- Bron: https://store.nintendo.nl/nl/games/shop-by-franchise/mario-kart-games?sort=top-sellers-->
+						</button>
+					</div>
 				</div>
 			</section>
 			<section class="card">
-				<img src="images/marioset.png" alt="Doos van de mario kart thuisset (mario versie)"> <!-- Bron: https://store.nintendo.nl/nl/games/shop-by-franchise/mario-kart-games?sort=top-sellers-->
+				<img src="images/marioset.png" alt="Doos van de mario kart thuisset (mario versie)">
+				<!-- Bron: https://store.nintendo.nl/nl/games/shop-by-franchise/mario-kart-games?sort=top-sellers-->
 				<p>Nintendo Switch</p>
 				<h2>Mario Kart Live: Home Circuit - Mario-set</h2>
-				<h2>€109,99 (incl. btw)</h2>
 				<div>
-					<a href="mariokartthuissetmario.html">Product bekijken</a>
-					<button>
-						<img src="images/hearticon.png" alt="Toevoegen aan favorieten">
-					</button>
+					<h2>€109,99 (incl. btw)</h2>
+					<div>
+						<a href="mariokartthuissetmario.html" aria-label="Mario kart live home circuit mario set product bekijken">Product bekijken</a>
+						<button>
+							<img src="images/hearticon.png" alt="Mario kart live home circuit mario set toevoegen aan favorieten">
+							<!-- Bron: https://store.nintendo.nl/nl/games/shop-by-franchise/mario-kart-games?sort=top-sellers-->
+						</button>
+					</div>
 				</div>
 			</section>
 			<section class="card">
-				<img src="images/luigiset.png" alt="Doos van de mario kart thuisset (luigi versie)"> <!-- Bron: https://store.nintendo.nl/nl/games/shop-by-franchise/mario-kart-games?sort=top-sellers-->
+				<img src="images/luigiset.png" alt="Doos van de mario kart thuisset (luigi versie)">
+				<!-- Bron: https://store.nintendo.nl/nl/games/shop-by-franchise/mario-kart-games?sort=top-sellers-->
 				<p>Nintendo Switch</p>
 				<h2>Mario Kart Live: Home Circuit - Luigi-set</h2>
-				<h2>€109,99 (incl. btw)</h2>
 				<div>
-					<a href="mariokartthuissetluigi.html">Product bekijken</a>
-					<button>
-						<img src="images/hearticon.png" alt="Toevoegen aan favorieten">
-					</button>
+					<h2>€109,99 (incl. btw)</h2>
+					<div>
+						<a href="mariokartthuissetluigi.html" aria-label="Mario kart live home circuit luigi set product bekijken">Product bekijken</a>
+						<button>
+							<img src="images/hearticon.png" alt="Mario kart live home circuit luigi set toevoegen aan favorieten">
+							<!-- Bron: https://store.nintendo.nl/nl/games/shop-by-franchise/mario-kart-games?sort=top-sellers-->
+						</button>
+					</div>
 				</div>
 			</section>
 			<section class="card">
-				<img src="images/uitbreidingspasset.png" alt="Doos van van de uitbreidingset"> <!-- Bron: https://store.nintendo.nl/nl/games/shop-by-franchise/mario-kart-games?sort=top-sellers-->
+				<img src="images/uitbreidingspasset.png" alt="Doos van van de uitbreidingset">
+				<!-- Bron: https://store.nintendo.nl/nl/games/shop-by-franchise/mario-kart-games?sort=top-sellers-->
 				<p>Nintendo Switch</p>
 				<h2>Mario Kart 8 Deluxe - Circuit-uitbreidingspas-set</h2>
-				<h2>€34,99 (incl. btw)</h2>
 				<div>
-					<a href="mariokartdeluxe8uitbreidingpasset.html">Product bekijken</a>
-					<button>
-						<img src="images/hearticon.png" alt="Toevoegen aan favorieten">
-					</button>
+					<h2>€34,99 (incl. btw)</h2>
+					<div>
+						<a href="mariokartdeluxe8uitbreidingpasset.html" aria-label="Mario kart 8 Deluxe uitbreidingspasset product bekijken">Product bekijken</a>
+						<button>
+							<img src="images/hearticon.png" alt="Mario kart 8 Deluxe uitbreidingspasset toevoegen aan favorieten">
+							<!-- Bron: https://store.nintendo.nl/nl/games/shop-by-franchise/mario-kart-games?sort=top-sellers-->
+						</button>
+					</div>
 				</div>
 			</section>
 		</section>
 	</main>
 	<footer>
 		<div>
-			<button>
-				<img src="images/nl.svg" alt="Nederlandse vlag"> <!-- Bron: https://store.nintendo.nl/nl/games/shop-by-franchise/mario-kart-games?sort=top-sellers-->
-					<span>Nederland €</span>
-					<img src="images/arrowdown.png" alt="Dropdown menu"> <!-- Bron: https://store.nintendo.nl/nl/games/shop-by-franchise/mario-kart-games?sort=top-sellers-->
+			<button aria-label="Land selecteren">
+				<img src="images/nl.svg" alt="Nederlandse vlag">
+				<!-- Bron: https://store.nintendo.nl/nl/games/shop-by-franchise/mario-kart-games?sort=top-sellers-->
+				<span>Nederland €</span>
+				<img src="images/arrowdown.png" alt="Dropdown menu">
+				<!-- Bron: https://store.nintendo.nl/nl/games/shop-by-franchise/mario-kart-games?sort=top-sellers-->
 			</button>
 		</div>
 		<details>
@@ -146,6 +211,7 @@
 			<summary>
 				<span>Franchises</span>
 				<img src="images/arrowdown.png" alt="Dropdown menu">
+				<!-- Bron: https://store.nintendo.nl/nl/games/shop-by-franchise/mario-kart-games?sort=top-sellers-->
 			</summary>
 			<ul>
 				<li><a href="supermario.html">Super Mario</a></li>
@@ -161,6 +227,7 @@
 			<summary>
 				<span>Ondersteuning</span>
 				<img src="images/arrowdown.png" alt="Dropdown menu">
+				<!-- Bron: https://store.nintendo.nl/nl/games/shop-by-franchise/mario-kart-games?sort=top-sellers-->
 			</summary>
 			<ul>
 				<li><a href="hulpenveelgesteldevragen.html">Hulp en veelgestelde vragen</a></li>
@@ -170,6 +237,7 @@
 			<summary>
 				<span>Over</span>
 				<img src="images/arrowdown.png" alt="Dropdown menu">
+				<!-- Bron: https://store.nintendo.nl/nl/games/shop-by-franchise/mario-kart-games?sort=top-sellers-->
 			</summary>
 			<ul>
 				<li><a href="mynintendostore.html">My Nintendo Store</a></li>
@@ -180,33 +248,45 @@
 		</details>
 		<nav>
 			<ul>
-                <li><a href="instagram.html" ><img src="images/instagram.svg" alt="Instagram van nintendo"></a></li> <!-- Bron: https://store.nintendo.nl/nl/games/shop-by-franchise/mario-kart-games?sort=top-sellers-->
-                <li><a href="facebook.html" ><img src="images/facebook.svg" alt="Facebook van nintendo"></a></li> <!-- Bron: https://store.nintendo.nl/nl/games/shop-by-franchise/mario-kart-games?sort=top-sellers-->
-                <li><a href="twitter.html" ><img src="images/twitter.svg" alt="Twitter van nintendo"></a></li> <!-- Bron: https://store.nintendo.nl/nl/games/shop-by-franchise/mario-kart-games?sort=top-sellers-->
-                <li><a href="youtube.html" ><img src="images/youtube.svg" alt="Youtube van nintendo"></a></li> <!-- Bron: https://store.nintendo.nl/nl/games/shop-by-franchise/mario-kart-games?sort=top-sellers-->
-				<li><a href="twitch.html" ><img src="images/twitch.svg" alt="Twitch van nintendo"></a></li> <!-- Bron: https://store.nintendo.nl/nl/games/shop-by-franchise/mario-kart-games?sort=top-sellers-->
-            </ul>
+				<li><a href="instagram.html"><img src="images/instagram.svg" alt="Instagram van nintendo"></a></li>
+				<!-- Bron: https://store.nintendo.nl/nl/games/shop-by-franchise/mario-kart-games?sort=top-sellers-->
+				<li><a href="facebook.html"><img src="images/facebook.svg" alt="Facebook van nintendo"></a></li>
+				<!-- Bron: https://store.nintendo.nl/nl/games/shop-by-franchise/mario-kart-games?sort=top-sellers-->
+				<li><a href="twitter.html"><img src="images/twitter.svg" alt="Twitter van nintendo"></a></li>
+				<!-- Bron: https://store.nintendo.nl/nl/games/shop-by-franchise/mario-kart-games?sort=top-sellers-->
+				<li><a href="youtube.html"><img src="images/youtube.svg" alt="Youtube van nintendo"></a></li>
+				<!-- Bron: https://store.nintendo.nl/nl/games/shop-by-franchise/mario-kart-games?sort=top-sellers-->
+				<li><a href="twitch.html"><img src="images/twitch.svg" alt="Twitch van nintendo"></a></li>
+				<!-- Bron: https://store.nintendo.nl/nl/games/shop-by-franchise/mario-kart-games?sort=top-sellers-->
+			</ul>
 		</nav>
 		<div>
 			<p>Betaal veilig met</p>
-			<img src="images/visa.svg" alt="Logo van visa"> <!-- Bron: https://store.nintendo.nl/nl/games/shop-by-franchise/mario-kart-games?sort=top-sellers-->
-			<img src="images/mastercard.svg" alt="Logo van mastercard"> <!-- Bron: https://store.nintendo.nl/nl/games/shop-by-franchise/mario-kart-games?sort=top-sellers-->
-			<img src="images/apple-pay.svg" alt="Logo van apple pay"> <!-- Bron: https://store.nintendo.nl/nl/games/shop-by-franchise/mario-kart-games?sort=top-sellers-->
-			<img src="images/paypal.svg" alt="Logo van paypal"> <!-- Bron: https://store.nintendo.nl/nl/games/shop-by-franchise/mario-kart-games?sort=top-sellers-->
-			<img src="images/google-pay.png" alt="Logo van google pay"> <!-- Bron: https://store.nintendo.nl/nl/games/shop-by-franchise/mario-kart-games?sort=top-sellers-->
+			<img src="images/visa.svg" alt="Logo van visa">
+			<!-- Bron: https://store.nintendo.nl/nl/games/shop-by-franchise/mario-kart-games?sort=top-sellers-->
+			<img src="images/mastercard.svg" alt="Logo van mastercard">
+			<!-- Bron: https://store.nintendo.nl/nl/games/shop-by-franchise/mario-kart-games?sort=top-sellers-->
+			<img src="images/apple-pay.svg" alt="Logo van apple pay">
+			<!-- Bron: https://store.nintendo.nl/nl/games/shop-by-franchise/mario-kart-games?sort=top-sellers-->
+			<img src="images/paypal.svg" alt="Logo van paypal">
+			<!-- Bron: https://store.nintendo.nl/nl/games/shop-by-franchise/mario-kart-games?sort=top-sellers-->
+			<img src="images/google-pay.png" alt="Logo van google pay">
+			<!-- Bron: https://store.nintendo.nl/nl/games/shop-by-franchise/mario-kart-games?sort=top-sellers-->
 		</div>
 		<nav>
 			<ul>
 				<li><p>© 2024 Nintendo</p></li>
-                <li><a href="privacy.html" >Privacy en cookies</a></li>
-                <li><a href="cookiesettings.html" >Cookie-instellingen</a></li>
-                <li><a href="algemenevoorwaarden.html" >Algemene voorwaarden</a></li>
-                <li><a href="bedrijfsinformatie.html" >Bedrijfsinformatie</a></li>
-            </ul>
+				<li><a href="privacy.html">Privacy en cookies</a></li>
+				<li><a href="cookiesettings.html">Cookie-instellingen</a></li>
+			</ul>
+			<ul>
+				<li><a href="algemenevoorwaarden.html">Algemene voorwaarden</a></li>
+				<li><a href="bedrijfsinformatie.html">Bedrijfsinformatie</a></li>
+			</ul>
 		</nav>
 	</footer>
-	
+
 	<script defer src="scripts/script.js"></script>
 </body>
-	
+
 </html>
